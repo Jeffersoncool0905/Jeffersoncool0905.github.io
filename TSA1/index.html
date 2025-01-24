@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/9b49f84d01.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="color-picker">
+        <i class="fa-solid fa-palette" onclick="toggleColorPicker()"></i>
+        <div class="color-options" id="colorOptions">
+            <div class="color-option" style="background-color: darkblue;" onclick="changeColors('darkblue', 'lightblue', 'white')"></div>
+            <div class="color-option" style="background-color: darkgreen;" onclick="changeColors('darkgreen', 'lightgreen', 'white')"></div>
+            <div class="color-option" style="background-color: darkred;" onclick="changeColors('darkred', 'lightcoral', 'white')"></div>
+            <div class="color-option" style="background-color: darkorange;" onclick="changeColors('darkorange', 'lightyellow', 'black')"></div>
+        </div>
+    </div>
+    <div class="container">
+        <!-- left side container -->
+        <div class="container-left">
+            <img src="profile.jpg" alt="Profile Picture" class="profile">
+            <h1 class="name">Jefferson Paul M. Petronio</h1>
+            <h2 class="course">BSITBA</h2>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fa-solid fa-house"></i>
+                    <p>Blk1 Lot 45 Ph2 DLC3 SJDMB</p>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>09097483721</p>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-at"></i>
+                    <p>jeffersonpaulmpetronio@gmail.com</p>
+                </div>
+            </div>
+            <hr class="line">
+            <h3 class="section-title">Skills</h3>
+            <div class="skills">
+                <div class="skill">
+                    <p>HTML & CSS</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>JavaScript</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Python</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 55%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right side ng contaiiner -->
+        <div class="container-right">
+            <h3 class="section-title tab-links tab-activate" onclick="opentab('objective')">Objective</h3>
+            <h3 class="section-title tab-links" onclick="opentab('education')">Educational Attainment</h3>
+            <h3 class="section-title tab-links" onclick="opentab('experience')">Experience</h3>
+            <h3 class="section-title tab-links" onclick="opentab('hobbies')">Hobbies</h3>
+            <!-- tabs ko -->
+            <div id="objective" class="tab-contents block-activate">
+                <p>I am a highly motivated and passionate student with a strong foundation in information technology and business analytics. My goal is to apply my knowledge and skills to develop innovative solutions that address complex challenges and improve user experiences across various platforms. I strive to bridge the gap between technology and business needs by leveraging data-driven insights, designing efficient processes, and implementing creative strategies. Through continuous learning, collaboration, and dedication, I aim to contribute meaningfully to projects that have a positive impact on organizations and society as a whole.</p>
+            </div>
+            <div id="education" class="tab-contents">
+                <div class="education">
+                    <p><strong>FEU Institute of Technology</strong></p>
+                    <p>BS in Information Technology with Business Analytics</p>
+                    <p>Expected Graduation: 2025</p>
+                </div>
+                <div class="education">
+                    <br><p><strong>Senior High School</strong></p>
+                    <p>Science, Technology, Engineering, and Mathematics (STEM)</p>
+                    <p>Siena College of San Jose Inc.</p>
+                    <p>Graduated: 2023</p>
+                </div>
+                <div class="education">
+                   <br> <p><strong>High School</strong></p>
+                    <p>Siena College of San Jose Inc.</p>
+                    <p>Graduated: 2021</p>
+                </div>
+            </div>
+            <div id="experience" class="tab-contents">
+                <div class="experience">
+                    <ul>
+                        <li>2023<br> Arduino Motion Sensing Research</li>
+                        <li>2023<br> Computer Programming 1</li>
+                        <li>2023<br> Computer Programming 2</li>
+                        <li>2024<br> User Design Fundamentals</li>
+                        <li>2024<br> UI/UX</li>
+                        <li>2024<br> Networking 1</li>
+                        <li>2024<br> Database Management</li>
+                        <li>2024<br> Design Thinking</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="hobbies" class="tab-contents">
+                <div class="hobbies">
+                    <ul>
+                        <li>Reading</li><br>
+                        <li>Playing Video Games</li><br>
+                        <li>Watching Movies</li><br>
+                        <li>Listening to Music</li><br>
+                        <li>Traveling</li><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
