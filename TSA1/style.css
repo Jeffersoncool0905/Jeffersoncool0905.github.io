@@ -39,26 +39,26 @@
     display: flex;
     justify-content: center;
     align-items: stretch;
-    width: 80%;
+    width: 100%;
     margin: 30px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
 }
 
 .container-left {
     background-color: grey;
-    width: 30%;
+    height: 90vh;
+    width: 25%;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .container-right {
     background-color: beige;
-    width: 70%;
+    width: 40%;
     padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .profile {
@@ -91,11 +91,11 @@
 .contact-info {
     width: 100%;
 }
-
 .info-item {
     display: flex;
     align-items: center;
     margin: 10px 0;
+    cursor: pointer;
 }
 
 .info-item i {
@@ -110,7 +110,22 @@
     margin: 0;
 }
 
+.info-item i {
+    color: white;
+    text-decoration: none;
+}
+
+.info-item i:hover {
+    text-decoration: underline;
+}
+
 /* Skill Section */
+.section-title-skill{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+}
 .skills {
     width: 100%;
     margin-top: 20px;
@@ -169,7 +184,7 @@
 
 .tab-contents {
     display: none;
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 .tab-contents.block-activate {
