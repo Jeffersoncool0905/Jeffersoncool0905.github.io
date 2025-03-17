@@ -1,0 +1,70 @@
+html{
+    background-image: url(mathbg.jpg);
+}
+#calcu{
+	width: 300px;
+	margin: 100px auto;
+	padding: 15px;
+	background-color: #615e5e;
+	border-radius: 10px;
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.screen {
+	background-color: #253416;
+	color: #fff;
+	padding: 20px;
+	text-align: right;
+	font-size: 2em;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.buttons {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+}
+
+button {
+	padding: 15px 0;
+	border: none;
+	border-radius: 5px;
+	background-color: #444;
+	color: white;
+	font-size: 1.5em;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+button:hover {
+	background-color: #555;
+}
+
+button:active {
+	background-color: #666;
+}
+
+.zero {
+	grid-column: span 2;
+}
+
+.equals {
+	background-color: #f39c12;
+}
+
+.equals:hover {
+	background-color: #e08e0b;
+}
+
+.clear {
+	background-color: #e74c3c;
+    
+}
+
+.clear:hover {
+	background-color: #c0392b;
+}
